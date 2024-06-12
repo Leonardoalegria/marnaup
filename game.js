@@ -87,7 +87,7 @@ canvas.addEventListener('click', (event) => {
     if (distanceToNanani < nanani.radius * 2) {
         level++;
         levelElement.textContent = `Level: ${level}`;
-        if (level <= 5) {
+        if (level <= 10) {
             speed += 1;
             nanani = new Cat('Nanani', 'gray', Math.random() * canvas.width, Math.random() * canvas.height, 20);
             setupLevel();
